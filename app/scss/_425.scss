@@ -1,0 +1,307 @@
+@media (max-width: 425px) {
+    img {
+        max-width: 310px;
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    ol {
+        margin-left: 20px;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    .btn-buy {
+        padding: 24px 44px;
+        font-size: 18px;
+    }
+
+    .buy__form input[type=text], .buy__form input[type=text] {
+        font-size: 20px;
+    }
+
+    .hero {
+
+        &__container {
+            padding: 20px 20px;
+        }
+
+        &__inner {
+        
+                margin: 0 20px;
+        
+            
+            
+        }
+
+        &__column-1 {
+           
+        }
+
+        .hero__column-2 h1 {
+            line-height: 48px;
+
+            span {
+                font-size: 22px;
+            }
+        }
+
+        &__list {
+            max-width: 100%;
+        }
+
+        &__list-item {
+            padding: 0 0 0 10px;
+        }
+    }
+    .description {
+        &__column-1 {
+        }
+    }
+
+    .symptoms {
+        &__items {
+            flex-direction: column;
+        }
+        &__item {
+            width: 100%;
+        }
+        &__item-image {
+            img {
+                border-radius: 0;
+            }
+        }
+    }
+
+    .buy {
+        &__items {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr 1fr auto auto 1fr;
+        }
+
+        &__item {
+            padding: 10px;
+        }
+    }
+
+    
+
+    .differences {
+        &__common-left {
+            img {
+                max-width: 340px;
+            }
+        }
+        &__gelmiflor-right {
+            img {
+                max-width: 340px;
+            }
+        }
+    }
+
+    .composition {
+
+    
+
+        &__inner {
+            
+        }
+    
+        &__items {
+        }
+
+        &__item {
+
+        }
+    
+        &__item:nth-child(odd) {
+
+            
+        }
+
+        &__item:nth-child(even) {
+
+            
+        }
+    
+        &__item-section {
+            img {
+                max-width: 380px;
+            }
+        }
+    }
+
+    
+    
+
+    
+
+    .instruction {
+
+        &__inner {
+        }
+    
+        &__items {
+     
+            grid-template-columns: repeat(1, 1fr);
+            
+        }
+    
+        &__item {
+            margin: 0;
+        }
+    }
+
+    .pharmacies {
+        &__inner {
+            
+        }
+
+        &__columns {
+            padding-left: 0px;
+        }
+    
+        &__items {
+            // max-width: 380px;
+        }
+    
+        &__item {
+            // max-width: 280px;
+            
+        }
+        &__item-text {
+            padding: 10px 10px 10px 10px;
+        }
+    }
+
+    .hero-pages {
+        padding: 20px 0 10px 0;
+
+        &__container {
+            margin: 0px;
+        }
+
+		&__content {
+            margin: 0 20px;
+            flex-wrap: wrap;
+            // align-items:flex-start;
+            justify-content: space-between;
+		}
+
+		&__text {
+            max-width: 50%;
+            margin: 0;
+            // margin: 40px 0 0 0;
+            // order: 1;
+		}
+
+		&__title {
+            font-size: 36px;
+            line-height: 44px;
+		}
+
+		&__small-title {
+            font-size: 16px;
+            line-height: 18px;
+            margin: 0 0 10px 0;
+		}
+
+        &__sub-title {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+		&__image {
+            max-width: 50%;
+            // order: 3;
+            // img {
+            //     max-width: 180px;
+            // }
+		}
+
+		&__buttons {
+            margin-top: -30px;
+            width: 100%;
+            text-align: center;
+            // order: 2;
+		}
+
+        &__contacts {
+            display: none;
+            margin: 0px;
+            // font-size: 12px;
+            // display: flex;
+            // justify-content: space-between;
+        }
+
+		&__btn-1 {
+            margin: 0px 0 10px 0;
+		}
+
+       .btn-buy {
+            padding: 20px 24px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
+    .footer {
+
+		&__inner {
+		}
+
+		&__columns {
+		}
+
+		&__column {
+		}
+
+		&__list {
+		}
+
+		&__item {
+		}
+
+		&__social {
+		}
+
+		&__social-items {
+		}
+
+		&__social-vk {
+		}
+
+		&__social-ok {
+		}
+
+		&__copywright {
+            display: block;
+            
+		}
+
+		&__copywright-logo {
+            margin: 20px 0;
+            img {
+                max-width: 80px;
+            }
+		}
+
+		&__copywright-text {
+            font-size: 14px;
+		}
+    }
+
+}

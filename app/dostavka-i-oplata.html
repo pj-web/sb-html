@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="48x48" href="images/icon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icon-96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="images/icon-144.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="images/icon-256.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="images/icon-384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png"> 
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="description" content="Доставка и оплата препарата Лоропакс">
+    <title>Условия доставки и оплаты средства Лоропакс</title>
+</head>
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="page">
+            @@include('_hero-pages.html')
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__inner">
+                        <h1 class="pages-title">Доставка и оплата</h1>
+                        <p>Уважаемые потребители!</p>
+                        <p>Ввиду того, что наша фирма всегда обеспечивает удобство для потребителей, мы следим за тем, чтобы доставка продукции осуществлялась точно в срок. Доставка осуществляется со склад акурьерской службой по всей территории Российсвой Федерации и Казахстана.</p>
+                        <p>Оформляя заказ на нашем <a href="https://loropax-official.ru/">официальном сайте</a>, вы страхуете сябя от покупки поддельной продукции.</p>
+                        <p>Для успешного оформления заказа, требуется имя и контактный телефон, которые Вам нужно указать в специальной форме на сайте. После этого Вам перезвонит специалист нашей компании, чтобы оформитзь доставку и уточненить все детали. Если у Вас есть какие-либо вопрасы их можно уточнить у специалиста.</p>
+                        <p>
+                        Доставка осуществляется удобным для Вас способом. Как правило ее срок составляет от двух до семи дней. Это зависит от условий работы транспортных компаний в разных регионах России и Казахстана.</p>
+                        <p>
+                            Формирование заказа но отправку на складе, обычно занимает порядка двенадцать часов. В период действия акции, в редких случаях этот период может увеличиться до 1-2 рабочих дней, это зависит от загруженности службы логистики.
+                        </p>
+
+                        <p><strong>График отправок</strong></p>
+                        <p>C понедельника по пятницу с 9-00 до 19-00</p>
+                        <p>В субботу с 10-00 до 17-00</p>
+                        <p><strong>График работы колл-центра</strong></p>
+                        <p><strong>Россия</strong> 24/7</p>
+                        <!-- <p><strong>Беларусь</strong> 24/7</p>  -->
+                        <p><strong>Казахстан</strong> 24/7</p>
+                    </div>
+                </div>
+                <div id="popup" class="popup-order popup">
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <a href="#header" class="popup__close close-popup">X</a>
+                            <div class="popup__buy-form">
+                                <h3>Акция! Только сегодня <span class="nowdate">
+                                    <script>
+                                        d=new Date();
+                                        p=new Date(d.getTime());
+                                        monthA="января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря".split(",");
+                                        document.write(p.getDate()+" "+monthA[p.getMonth()]+" "+p.getFullYear()) + " г. ";
+                                        </script>
+                                </span>!</h3>
+                                <div class="popup__price-new buy__price-new">
+                                <span>168 руб.</span>
+                                </div>
+                                <div class="popup__price-old buy__price-old">
+                                    Вместо <span>1950 руб.</span> 
+                                </div>
+                            </div>
+                        </section>
+        </main>
+        @@include('_footer.html')
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

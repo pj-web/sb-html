@@ -1,0 +1,73 @@
+@media (max-width: 599px) {
+
+    .header {
+        &__container {
+            min-height: 60px;
+            padding: 0 20px;
+        }
+
+        &__logo {
+            img {
+                
+            }
+        }
+        &__item-1 {
+            display: none;
+        }
+        &__item-2 {
+            display: none;
+        }
+
+    }
+
+    .hero-pages {
+
+		&__container {
+            margin: 0 20px;
+		}
+
+		&__content {
+            padding: 10px 0 0 0;
+		}
+
+		&__text {
+            max-width: 28%;
+        }
+
+		&__title {
+            font-size: 24px;
+            line-height: 32px;
+		}
+
+		&__small-title {
+            font-size: 12px;
+            line-height: 14px;
+            margin: 0 0 10px 0;
+		}
+
+		&__sub-title {
+            font-size: 15px;
+            line-height: 17px;
+		}
+
+		&__image {
+		}
+
+		&__buttons {
+		}
+
+		&__contacts {
+            margin: 40px 0 0px 0;
+		}
+
+		&__btn-1 {
+		}
+
+        .btn-buy {
+            padding: 8px 8px;
+            font-size: 12px;
+            line-height: 14px;
+            
+        }
+    }
+}

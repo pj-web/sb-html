@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="48x48" href="images/icon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icon-96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="images/icon-144.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="images/icon-256.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="images/icon-384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png"> 
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="description" content="Карта сайта">
+    <title>Карта сайта</title>
+</head>
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="page">
+            @@include('_hero-pages.html')
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__inner">
+                        <h1 class="anim-items anim-hide">Карта сайта</h1>
+                        <ul class="footer__list">
+                            <li><a href="https://gelmi-flor-official.ru/">Купить Гельмифлор</a></liclass=> 
+                            <li><a href="otzyvy.php">Отзывы</a></li>
+                            <li><a href="sostav-i-instructsia.php">Состав и инстраукция</a></liclass=> 
+                            <li><a href="kontakty.php">Контакты</a></li>
+                            <li><a href="vakansii.php">Вакансии</a></li>
+                            <li><a href="dostavka-i-oplata.php">Доставка и оплата</a></li> 
+                            <li><a href="skidki-i-aktsii.php">Скидки и акции</a></li> 
+                            <li><a href="reklamodatelyam.php">Рекламодателям</a></li> 
+                            <li><a href="optovym-pokupatelyam.php">Оптовым покупателям</a></li> 
+                            <li><a href="privacy-policy.php">Политика конфиденциальности</a></li> 
+                            <li><a href="sitemap.php">Карта сайта</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="buy">
+                <div class="container">
+                    <div class="buy__inner">
+                        <h2 class="anim-items anim-hide">Купить Гельмифлор+ у официального производителя</h2>
+                        <p class="anim-items anim-hide">Выберите страну и оставьте свои контакты в этой форме. Для этого необходимо ввести имя и телефон и нажать кнопку "Купить по акции". В течении 15 минут после этого с Вами свяжется наш специалист, познакомит с выгодным предложением и сообщит все интересующие Вас условия заказа и доставки.
+                        </p>
+                        <div class="buy__price">
+                            <h3 class="anim-items anim-hide">Акция! Только сегодня <span class="nowdate">
+                                <script>
+                                    d=new Date();
+                                    p=new Date(d.getTime());
+                                    monthA="января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря".split(",");
+                                    document.write(p.getDate()+" "+monthA[p.getMonth()]+" "+p.getFullYear()) + " г. ";
+                                    </script>
+                            </span>!</h3>
+                            <div class="buy__price-new">
+                                <span class="anim-items anim-hide">168 руб.</span>
+                            </div>
+                            <div class="buy__price-old">
+                                Вместо <span class="anim-items anim-hide">1950 руб.</span> 
+                            </div>
+                        </div>
+                        <div class="buy__columns">
+                            <div class="buy__column-1">
+                                <div class="buy__form order">
+                                    <form class="order-form" action="api.php" method="POST">
+                                        <input type='hidden' name='utm_source' value='<?=$_GET['utm_source']?>' />
+                                        <input type='hidden' name='utm_content' value='<?=$_GET['utm_content']?>' />
+                                        <input type='hidden' name='utm_campaign' value='<?=$_GET['utm_campaign']?>' />
+                                        <input type='hidden' name='utm_term' value='<?=$_GET['utm_term']?>' />
+                                        <input type='hidden' name='utm_medium' value='<?=$_GET['utm_medium']?>' />
+                                        <input type='hidden' name='sub_id1' value='<?=$_GET['sub_id1']?>' />
+                                        <input type='hidden' name='sub_id2' value='<?=$_GET['sub_id2']?>' />
+                                        <input type='hidden' name='sub_id3' value='<?=$_GET['sub_id3']?>' />
+                                        <input type='hidden' name='comment' value='<?=$_GET['comment']?>' />
+                                        <div class="order-form-input-field-wrapper">
+                                            <label class="order-form-label">Страна:</label>
+                                            <select name="country" class="country__selecor order-form-input-field">
+                                                <option value="RU">Россия</option>
+                                            </select>
+                                        </div>
+                                        <div class="order-form-input-field-wrapper">
+                                            <label class="order-form-label">Имя:</label>
+                                            <input type="text" class="order-form-input-field input-field-name" name="name" autocomplete="off" minlength="1" required="" placeholder="Введите ваше имя">
+                                        </div>
+                                        <div class="order-form-input-field-wrapper">
+                                            <label class="order-form-label">Номер телефона:</label>
+                                            <input type="tel" class="order-form-input-field input-field-phone phone-black" name="phone" maxlength="24" autocomplete="off" minlength="7" required="" placeholder="Введите ваш номер телефона">
+                                        </div>
+                                        <button class="buy__button btn-buy-form" type="submit">Купить по акции</button>
+                                        <div class="buy__checkbox">
+                                            <input checked="checked" type="checkbox" /> Нажимая на кнопку "Купить по акции", я даю согласие на <a href="privacy-policy.php">обработку персональных данных и согласен с политикой конфендициальности.</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="buy__column-2">
+                                <img class="anim-items anim-hide" src="images/buy-01.png" alt="Фотография Гельмифлор" loading="lazy">
+                            </div>
+                        </div>
+                        <p>Доставка осуществляется по всей России, Беларуси и Казахстану. Оплатить и получить товар вы можете в Вашем городе по указанному адресу.</p>
+                        </div>
+                </div>
+            </section>
+        </main>
+        @@include('_footer.html')
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

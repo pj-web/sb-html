@@ -1,0 +1,93 @@
+<section class="hero-pages">
+    <div class="hero-pages__container">
+        <div class="hero-pages__content">
+            <div class="hero-pages__text">
+                <div class="hero-pages__title anim-items anim-hide">Лоропакс</div>
+                <div class="hero-pages__small-title anim-items anim-hide">Для профилактики нарушений слуха</div>
+                <div class="hero-pages__sub-title anim-items anim-hide">Официальный сайт</div>
+            </div>
+            <div class="hero-pages__image">
+                <img src="images/hero-pages-image.png" alt="Фотография Лоропакс" loading="lazy">
+            </div>
+            <div class="hero-pages__buttons">
+                <div class="hero-pages__contacts anim-items anim-hide">
+                    <div class="hero-pages__social">
+                        <!-- <p><strong>Мы в социальных сетях</strong></p> -->
+                        <div class="hero-pages__social-items">
+                            <div class="hero-pages__social-vk">
+                                <a href="https://vk.com/loropaks" target="_blank"><img src="icons/vk.svg" width="40" height="40" alt="Мы в контакте"></a>
+                            </div>
+                            <div class="footer__social-ok">
+                                <a href="https://ok.ru/group/61518431453389" target="_blank"><img src="icons/ok.svg" width="40" height="40" alt="Мы в однокласниках"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div><b>Email:</b> <a href="mailto:info@loropax-official.ru">info@loropax-official.ru</a></div>
+                </div>
+                <a class="popup-link hero-pages__btn-1 btn-buy anim-items anim-hide" href="#popup">Заказать со скидкой</a>
+            </div>
+        </div>
+        <div id="popup" class="popup-order popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#header" class="popup__close close-popup">X</a>
+                    <div class="popup__buy-form">
+                        <h3>Акция! Только сегодня <span class="nowdate">
+                            <script>
+                                d=new Date();
+                                p=new Date(d.getTime());
+                                monthA="января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря".split(",");
+                                document.write(p.getDate()+" "+monthA[p.getMonth()]+" "+p.getFullYear()) + " г. ";
+                                </script>
+                        </span>!</h3>
+
+                        <div class="popup__price-new buy__price-new">
+                            <span class="new_price_val"
+                                ><span class="new_price">168</span></span
+                            >
+                            <span class="new_price_cur"></span><span class="currency_price">руб</span>
+                        </div>
+                        <div class="popup__price-old buy__price-old">
+                            Старая цена
+                            <span class="old_price_val old_price">1499</span>
+                            <span class="old_price_cur"></span><span class="currency_price">руб</span>
+                        </div>
+                    </div>
+                    <div class="popup__buy-form">
+                        <div class="buy__form order">
+                            <form class="order-form" action="api.php" method="POST">
+                                <input type='hidden' name='utm_source' value='<?=$_GET['utm_source']?>' />
+                                <input type='hidden' name='utm_content' value='<?=$_GET['utm_content']?>' />
+                                <input type='hidden' name='utm_campaign' value='<?=$_GET['utm_campaign']?>' />
+                                <input type='hidden' name='utm_term' value='<?=$_GET['utm_term']?>' />
+                                <input type='hidden' name='utm_medium' value='<?=$_GET['utm_medium']?>' />
+                                <input type='hidden' name='sub_id1' value='<?=$_GET['sub_id1']?>' />
+                                <input type='hidden' name='sub_id2' value='<?=$_GET['sub_id2']?>' />
+                                <input type='hidden' name='sub_id3' value='<?=$_GET['sub_id3']?>' />
+                                <input type='hidden' name='comment' value='<?=$_GET['comment']?>' />
+                                <div class="order-form-input-field-wrapper">
+                                    <label class="order-form-label">Страна:</label>
+                                    <select name="country" class="country__selecor order-form-input-field">
+                                        <option value="RU">Россия</option>
+                                    </select>
+                                </div>
+                                <div class="order-form-input-field-wrapper">
+                                    <label class="order-form-label">Имя:</label>
+                                    <input type="text" class="order-form-input-field input-field-name" name="name" autocomplete="off" minlength="1" required="" placeholder="Введите ваше имя">
+                                </div>
+                                <div class="order-form-input-field-wrapper">
+                                    <label class="order-form-label">Номер телефона:</label>
+                                    <input type="tel" class="order-form-input-field input-field-phone phone-black" name="phone" maxlength="24" autocomplete="off" minlength="7" required="" placeholder="Введите ваш номер телефона">
+                                </div>
+                                <button class="buy__button btn-buy-form" type="submit">Купить по акции</button>
+                                <div class="buy__checkbox">
+                                    <input checked="checked" type="checkbox" /> Нажимая на кнопку "Купить по акции", я даю согласие на <a href="privacy-policy.php">обработку персональных данных и согласен с политикой конфендициальности.</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,146 @@
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 40px 30px;
+    }
+
+    .columns {
+        flex-direction: column;
+
+        &__left {
+            margin: 0 0px 20px 0;
+        }
+    }
+
+    .hero {
+        &__list {
+            max-width: 53%;
+        }
+    }
+
+    .description {
+        &__columns {
+            flex-direction: column-reverse;
+        }
+
+        &__principle {
+            flex-direction: column;
+        }
+        &__principle-1 {
+            text-align: center;
+        }
+    }
+    .symptoms {
+        background-image: none;
+        background-color: #DCF4FF;
+
+		&__inner {
+		}
+
+		&__text {
+		}
+
+		&__items {
+		}
+
+		&__item {
+            
+		}
+
+        &__item:nth-child(3) {
+            
+        }
+
+		&__item-image {
+            max-width: 100%;
+            img {
+                width: 100%;
+                border-radius: 5%;
+                
+            }
+		}
+
+		&__item-text {
+		}
+
+        &__text:last-child {
+            max-width: 100%;
+            padding: 20px 0px 0px;
+        }
+    }
+    
+    .image {
+        margin-bottom: 20px;
+        &::after {
+            display: none;
+        }
+    }
+    
+    .alert {
+        &__columns {
+           
+        }
+
+        &__columns-image {
+            max-width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .buy {
+        &__columns {
+            
+        }
+
+        &__column-2 {
+            text-align: center;
+        }
+    }
+
+    .non-treatment {
+        &__columns-left {
+            margin-bottom: 20px;
+		}
+        &__columns-right {
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .reviews {
+        &__columns-left {
+            margin: 0 0 40px 0;
+		}
+    }
+
+    .pharmacies {
+
+        &__columns {
+            align-items: start;
+            padding-left: 40px;
+
+            .columns__left, .columns__right {
+                width: 80%;
+            }
+            .columns__left {
+                margin: 0px;
+            }
+
+        }
+        
+    }
+
+    .hero-pages {
+
+    
+        &__text {
+            max-width: 33%;
+
+        }
+    }
+
+}

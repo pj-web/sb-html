@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="48x48" href="images/icon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icon-96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="images/icon-144.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="images/icon-256.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="images/icon-384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png"> 
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="description" content="Cкидки и акции на средство Лоропакс">
+    <title>Скидки и акции</title>
+</head>
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="page">
+            @@include('_hero-pages.html')
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__inner">
+                        <h1 class="pages-title">Скидки и акции</h1>
+                        <p>На нашем официальном сайте <a href="https://loropax-official.ru/">https://loropax-official.ru/</a> регулярно проводятся различные акции, благодяря которым вы сможете ощутимо съэкономить.</p>
+
+                        <p>Если вы не успели заказать средство в период акции, на нашем официальном сайте, на постоянной основе,действует скидка 15% при заказе более семи упаковок средства.</p>
+                        <p>Но именно сегодня <span class="nowdate">
+                            <script>
+                                d=new Date();
+                                p=new Date(d.getTime());
+                                monthA="января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря".split(",");
+                                document.write(p.getDate()+" "+monthA[p.getMonth()]+" "+p.getFullYear()) + " г. ";
+                                </script>
+                        </span>действует беспрецедентная акция! Воспользовавшись предложением вы можете получить Гельмифлор всего за 168 рублей вместо 1950 рублей!</p>
+                        <a class="popup-link hero-pages__btn-1 btn-buy" href="#popup">Заказать со скидкой</a>
+                        <p>Следите за акциями!</p>
+                        <p>Узнать подробнее о ближайших скидках и акциях вы можете на нашем официальном сайте или по электронной почте <a href="mailto:info@loropax-official.ru">info@loropax-official.ru</a>.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('_footer.html')
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

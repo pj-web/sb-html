@@ -1,0 +1,99 @@
+@media (max-width: 359px) {
+
+    img {
+        // max-width: 240px;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    .btn-buy {
+        padding: 24px 30px;
+    }
+
+    .hero {
+        &__inner {
+            margin: 0 20px;
+        }
+        h1 {
+            font-size: 34px;
+            line-height: 34px;
+
+            span {
+                font-size: 14px;
+                line-height: 1;
+            }
+        }
+        &__image {
+            img {
+                max-width: 264px;
+            }
+        }
+    }
+
+    .pharmacies {
+        &__inner {
+            margin: 0 10px;
+         
+        }
+    
+        &__items {
+            max-width: 320px;
+        }
+    
+        &__item {
+            max-width: 220px;
+            
+        }
+    }
+    .popup {
+    
+        &__body {
+        }
+
+        &__content {
+            max-width: 260px;
+        }
+    }
+
+    //-------------------------
+
+    .hero-pages {
+
+		&__title {
+            font-size: 32px;
+            line-height: 42px;
+        }
+
+        &__sub-title {
+            font-size: 16px;
+        }
+        &__buttons {
+            margin-top: 0px;
+        }
+    }
+
+    //-------------------------
+    
+    #map {
+        width: 260px; height: 300px;
+      }
+    .contacts {
+        &__inner {
+    
+        }
+        &__map {
+            max-width: 280px;
+            max-height: 200px;
+        }
+        &__team {
+    
+        }
+        &__team-item {
+            img {
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,487 @@
+@media (max-width: 1200px) {
+
+    h1 {
+        font-size: 58px;
+    }
+    
+    img {
+        // width: 420px;
+        width: 100%;
+    }
+    
+        .header {
+
+            &__logo {
+                img {
+                    max-width: 140px;
+                }
+            }
+    
+            &__contaner {
+                justify-content: space-around;
+            }
+    
+            &__item-1 {
+                padding: 0px 0 0 50px;
+                max-width: 230px;
+                font-size: 14px;
+    
+                &::before {
+                    top: 0px;
+                }
+            }
+    
+            &__item-2 {
+                padding: 0px 0 0 50px;
+                max-width: 200px;
+                font-size: 14px;
+    
+                &::before {
+                    top: 0px;
+                }
+            }
+    
+        }
+    
+        .menu {
+    
+            &__icon {
+                
+            }
+        
+            &__body {
+            }
+        
+            &__nav {
+                
+                
+            }
+        
+            &__item {
+                & + .menu__item {
+                    padding: 0 0 0 60px;
+                }
+                
+            }
+        }
+    
+        .hero {
+            min-height: fit-content;
+    
+            &__container {
+                position: inherit;
+                padding-bottom: 40px;
+            }
+            
+    
+            &__body {
+                position: inherit;
+                background: url('../images/hero-middle.png') top / cover no-repeat;
+    
+            }
+    
+            &__inner {
+                margin: 0 40px;
+               
+                
+            }
+        
+                &__columns {
+                    padding: 20px 0 0 0;
+                    flex-wrap: wrap;
+                    // flex-direction:column;
+                    align-items: center;
+                    justify-content: center;
+                    // padding-bottom: 20px;
+    
+                }
+    
+                &__column-1 {
+                    text-align: center;
+                    margin: 0;
+                    width: 100%;
+                }
+    
+                &__column-2 {
+                    text-align: center;
+                    width: 100%;
+                }
+        
+    
+                &__button {
+                    text-align: center;
+                }
+    
+                &__list {
+                   margin: 0 auto 40px;
+                   max-width: 42%;
+                   text-align: left;
+    
+            }
+    
+            &__list-item {
+                padding-left: 40px;
+            }
+        
+                &__item {
+                    padding: 0;
+        
+                    &::before {
+                        display: none;
+                    }
+                }
+        
+                &__image {
+                    width: 100%;
+                    text-align: center;
+    
+                    img {
+                        max-width: 600px;
+                    }
+            }
+        }
+    
+        
+        .description {
+            &::before {
+                display: none;
+            }
+           
+
+            &__inner {
+            }
+    
+            &__description {
+            }
+    
+            &__description-text {
+            }
+    
+            &__columns {
+                margin-top: 40px;
+            }
+    
+            &__column-1 {
+                margin: 10px 0;
+            }
+    
+            &__column-2 {
+                margin: 10px 0;
+            }
+    
+            &__principle {
+            }
+    
+            &__principle-1 {
+            }
+    
+            &__principle-2 {
+            }
+    
+            &__principle-list {
+            }
+    }
+    
+    
+    
+
+    
+    .symptoms {
+
+		&__inner {
+		}
+
+		&__text {
+		}
+
+		&__items {
+		}
+
+		&__item {
+            width: 50%;
+		}
+
+        &__item:nth-child(3) {
+            margin: 0;
+        }
+
+		&__item-image {
+            img {
+                border-radius: 10%;
+            }
+		}
+
+		&__item-text {
+		}
+    }
+
+    .buy {
+    
+        &__inner {
+            
+            
+        }
+
+        &__price {
+            
+        }
+
+        &__columns {
+            
+        }
+
+        &__column-1 {
+            
+        }
+
+        &__form {
+        }
+
+        &__button {
+        }
+
+        &__checkbox {
+        }
+
+        
+        &__column-2 {
+            
+        }
+
+        &__bloquote {
+            align-items: start;
+            img {
+                max-width: 50px;
+                margin: 20px 0 0 10px;
+            }
+        }
+    }
+
+    .non-treatment {
+
+		&__inner {
+		}
+
+		&__columns {
+		}
+
+		&__columns-left {
+		}
+
+		&__columns-list {
+		}
+
+		&__columns-right {
+
+		}
+
+		&__recover {
+		}
+
+		&__items {
+            flex-wrap: wrap;
+		}
+
+		&__item {
+            padding: 10px;
+           
+		}
+
+		&__item-text {
+		}
+    }
+
+
+    
+    
+    
+    
+    
+       
+    
+        .principle {
+            &__items {
+                flex-direction: column;
+            }
+            &__item {
+                width: 100%;
+            }
+        }
+    
+        .composition {
+        
+    
+            &__inner {
+                
+            }
+        
+            &__items {
+            }
+        
+            &__item {
+                
+            }
+        
+            &__item-section {
+            }
+        }
+ 
+    
+        .pharmacies {
+            &__inner {
+                
+            }
+        
+            &__items {
+                
+            }
+        
+            &__item {
+                
+                
+            }
+        }
+    
+        .popup {
+            &__content {
+                max-width: 600px;
+            }
+        }
+    
+        //------------------------------
+    
+        .hero-pages {
+            
+            
+    
+            &::before {
+                font-size: 120px;
+                top: 0%;
+            }
+    
+            &::after {
+                font-size: 120px;
+                bottom: -20%;
+            }
+    
+            &__content {
+                margin: 0 40px;
+                padding: 40px 0 10px 0;
+            }
+    
+            &__text {
+                margin: 20px 0 0 0;
+            }
+    
+            &__title {
+                // font-size: 34px;
+            }
+    
+            &__small-title {
+                // font-size: 14px;
+                // line-height: 16px;
+            }
+    
+            &__sub-title {
+                // font-size: 14px;
+            }
+    
+            &__image {
+                // img {
+                //     max-width: 250px;
+                //     margin-top: 40px;
+                // }
+            }
+    
+            &__buttons {
+            }
+    
+            &__contacts {
+                margin: 40px 0 20px 0;
+                font-size: 14px;
+            }
+    
+            &__btn-1 {
+                a {
+                    padding: 10px 18px 10px 18px;
+                    font-size: 16px;
+                }
+            }
+    
+            .btn-buy {
+                padding: 20px 35px;
+            }
+    
+    }
+    
+       
+    
+        //------------------------------
+    
+        .doctors {
+            padding: 40px 0px;
+    
+            &__inner {
+                margin: 0 40px;
+            }
+    
+            &__item {
+                display: block;
+                
+            }
+    
+            &__avatar {
+                padding: 0px 0 0 25px;
+            }
+            &__btn {
+                margin: 20px 10px 10px 0;
+            }
+        }
+    
+        .customers {
+            padding: 40px 0px;
+    
+            &__inner {
+                margin: 0 40px;
+            }
+    
+            &__items {
+            }
+    
+            &__item {
+                display: block;
+            }
+    
+            &__avatar {
+                padding: 0px 0 0 25px;
+            }
+    
+            &__text {
+            }
+    
+            &__name {
+            }
+    
+            &__age {
+            }
+    
+            &__testimonial {
+            }
+    }
+        //------------------------------
+        .contacts {
+            &__inner {
+                
+            }
+            &__team {
+                grid-template-columns: repeat(2, 1fr);
+                
+            }
+            &__team-item {
+                
+                // width: 50%;
+                margin: 0 0 40px 0;
+            }
+        }
+    
+    }
