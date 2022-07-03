@@ -175,9 +175,21 @@ p.anim-items {
 blockquote {
     margin: 0 0 20px 0;
     padding: 10px 10px 10px 30px;
-    border-left: #543E2C 3px solid;
+    border-left: #543E2C 8px solid;
     font-style: italic;
     background-color:#f8f8f8;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: url('../icons/quotes2.svg') 0 0 no-repeat;
+        opacity: 0.3;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        top: 5%;
+        left: 25px;
+    }
 }
 
 
@@ -284,7 +296,9 @@ figure {
 }
 
 figcaption {
-    font-size: 9px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 figure.anim-items {
@@ -357,6 +371,35 @@ span.red {
         margin: 0 20px 0 0;
     }
 }
+
+.column {
+    width: 50%;
+}
+
+
+.warning {    
+    margin: 20px 16px;
+    padding: 25px 20px 25px 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+    font-weight: 700;
+
+    &::before {
+        content: "";
+        background: url('../images/warning.png') 0 0 no-repeat;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        top: 5%;
+        left: 25px;
+    }
+}
+
+
+
 
 .header {
     position: absolute;
@@ -670,6 +713,14 @@ span.red {
         margin-bottom: 20px;
     }
 
+    &__principle-1 {
+        width: 40%;
+        margin: 0 40px 0 0;
+    }
+    &__principle-2 {
+        width: 60%;
+    }
+
     
 }
 
@@ -720,6 +771,7 @@ span.red {
         font-size: 18px;
         line-height: 110%;
         padding: 0 20px;
+        font-weight: 700;
         
     }
 
@@ -729,9 +781,7 @@ span.red {
     }
 
     &__text:last-child {
-        max-width: 70%;
-        margin: 0 auto;
-        padding: 40px 60px;
+        
     }
 
 }
