@@ -183,7 +183,7 @@ blockquote {
     &::before {
         content: "";
         background: url('../icons/quotes2.svg') 0 0 no-repeat;
-        opacity: 0.3;
+        opacity: 0.2;
         position: absolute;
         width: 70px;
         height: 70px;
@@ -275,6 +275,12 @@ ol, ul.anim-items {
     }
 }
 
+.img-flex {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
 img.anim-items {
     // transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
     transform: scale(0);
@@ -317,6 +323,9 @@ span.red {
     color: #d61212;
     font-weight: 700;
 }
+.textbold {
+    font-weight: 700;
+}
 
 .button {
     text-align: center;
@@ -355,6 +364,93 @@ span.red {
 }
 
 
+summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary::-moz-list-bullet {
+    list-style-type: none;
+  }
+  
+  summary::marker {
+    display: none;
+  }
+  
+  summary {
+    display: block;
+    padding: .3em 1em .3em .9em;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 1em;
+    line-height: 2;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    background-color: #f8f8f88e;
+    margin: 2px 0;
+    border-left: #543E2C 4px solid;
+    border-radius: 1%;
+  }
+  
+  summary:before {
+    top: .4em;
+    right: .3em;
+    color: transparent;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNTkgOC41OUwxMiAxMy4xNyA3LjQxIDguNTkgNiAxMGw2IDYgNi02eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=") no-repeat 50% 50%/1em 1em;
+    width: 1em;
+    height: 1em;
+    content: "";
+    position: absolute;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+  }
+  
+  details[open] > summary:before {
+    -webkit-transform: scale(1, -1);
+            transform: scale(1, -1);
+  }
+  
+  summary ~ * {
+    padding: 0 1em 10px 1.4em;
+  }
+  
+  details[open] summary ~ * {
+    -webkit-animation: sweep .5s ease-in-out;
+            animation: sweep .5s ease-in-out;
+  }
+  
+  @-webkit-keyframes sweep {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes sweep {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  summary:focus {
+    outline: 0;
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3);
+  }
+
+  details p {
+    margin: 0;
+  }
+  
+  
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -374,17 +470,20 @@ span.red {
 
 .column {
     width: 50%;
+    margin: 0 10px;
 }
 
 
 .warning {    
     margin: 20px 16px;
-    padding: 25px 20px 25px 120px;
+    padding: 30px 20px 30px 120px;
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     align-items: center;
     position: relative;
+    font-size: 18px;
+    line-height: 1.2;
     font-weight: 700;
 
     &::before {
@@ -393,7 +492,7 @@ span.red {
         position: absolute;
         width: 70px;
         height: 70px;
-        top: 5%;
+        top: 6%;
         left: 25px;
     }
 }
@@ -1262,7 +1361,7 @@ span.red {
         }    
     }
 
-    .instruction {
+.instruction {
         background-color: #DCF4FF;
         position: relative;
 
@@ -1282,6 +1381,17 @@ span.red {
         }
     }
 
+.certificate {
+    background-color: #fff;
+    position: relative;
+}
+
+.reserch {
+    background-color: #DCF4FF;
+    position: relative;
+    
+}
+
     .reviews {
         position: relative;
         background-color: #fff;
@@ -1299,6 +1409,59 @@ span.red {
 		&__columns-right {
 		}
 }
+
+.faq {
+    position: relative;
+    background-color: #fff;
+}
+
+
+.slider {
+
+    &__arrows {
+    }
+
+    &__blocks {
+    }
+
+    &__block {
+    }
+
+    &__dots {
+    }
+
+    &__dot {
+    }
+}
+.reviews {
+
+    &__block {
+    }
+
+    &__reviewer {
+    }
+
+    &__reviewer-userpic {
+        float: left;
+    }
+
+    &__reviewer-name {
+    }
+
+    &__reviewer-caption {
+    }
+
+    &__block-text {
+    }
+
+    &__button {
+    }
+}
+.active-dot {
+}
+
+
+
 
 
 .problems {

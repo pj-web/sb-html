@@ -21,8 +21,19 @@
     }
 
     img {
-        max-width: 380px;
         width: 100%;
+    }
+
+    .warning {
+        margin: 20px 5px;
+        padding: 25px 20px 25px 90px;
+        font-size: 15px;
+        line-height: 1.2;
+
+        &::before {
+            top: 10%;
+            left: 4%;
+        }
     }
 
     .header {
